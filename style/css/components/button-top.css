@@ -1,0 +1,33 @@
+.button-top {
+    height: 80px;
+    width: 80px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    background: url('../../../assets/icons/arrow-top.png');
+    background-color: var(--second-black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(190deg) scale(1.0);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    filter: saturate(0%);
+    z-index: 9999;
+}
+
+.button-top:hover {
+    animation: pulseButtonTop 500ms infinite;
+    transform: rotate(190deg) scale(1.0);
+    filter: saturate(100%);
+}
+
+@keyframes pulseButtonTop {
+    0% {transform: rotate(190deg) scale(1.0)}
+    50% {transform: rotate(190deg) scale(1.01)}
+    100% {transform: rotate(190deg) scale(1.0)}
+}

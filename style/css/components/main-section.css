@@ -1,0 +1,6 @@
+.main-section {
+    padding: 100px 0px;
+    background: var(--second-black);
+    border-bottom: 5px solid var(--main-color);
+}
+

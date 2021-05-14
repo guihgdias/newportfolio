@@ -1,0 +1,61 @@
+.main-footer {
+    height: 80px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer .content-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.main-footer .anchor {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: saturate(0%);
+    opacity: 0.2;
+    transition: all 200ms linear;
+}
+
+.main-footer .anchor:hover {
+    filter: saturate(100%);
+    opacity: 1;
+    animation: pulse 500ms infinite;
+    transform: scale(1.0);
+}
+
+.main-footer .anchor.-facebook {
+    background-image: url('../../../assets/icons/socials/facebook.png');
+}
+
+.main-footer .anchor.-instagram {
+    background-image: url('../../../assets/icons/socials/instagram.png');
+}
+
+.main-footer .anchor.-twitter {
+    background-image: url('../../../assets/icons/socials/twitter.png');
+}
+
+.main-footer .anchor.-github {
+    background-image: url('../../../assets/icons/socials/github.png');
+}
+
+.main-footer .anchor.-linkedin {
+    background-image: url('../../../assets/icons/socials/linkedin.png');
+}
+
+@keyframes pulse {
+    0% {transform: scale(1.0)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1.0)}
+}

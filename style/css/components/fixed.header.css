@@ -1,0 +1,19 @@
+.fixed-header {
+    width: 100%;
+    background: var(--black);
+    z-index: -1;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: 350ms all linear;
+}
+
+.fixed-header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed-header .navigation {
+    display: flex;
+    align-items: center;
+}

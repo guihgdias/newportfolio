@@ -1,0 +1,27 @@
+.main-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../assets/images/background/background-site-on.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-banner .image {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    animation: imagePulse 10s infinite;
+}
+
+.main-banner .main-title {
+    margin-top: 30px;
+}
+
+@keyframes imagePulse {
+    0% {transform: scale(1); filter: saturate(0%);}
+    50% {transform: scale(1.02); filter: saturate(100%);}
+    100% {transform: scale(1    ); filter: saturate(0%);}
+}

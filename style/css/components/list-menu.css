@@ -1,0 +1,42 @@
+.list-menu .list {
+    padding: 10px 20px;
+}
+
+.list-menu .list .anchor {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: all 200ms linear;
+}
+
+.list-menu .list .anchor:hover {
+    color: var(--main-color);
+}
+
+.list-menu .list .anchor::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--white);
+    display: block;
+    margin-top: 5px;
+    transition: all 200ms linear;
+}
+
+.list-menu .list .anchor:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    transition: all 200ms linear;
+    top: 10px;
+}
+
+.list-menu .list .anchor:hover .list-menu .list .anchor::before {
+    width: 100px;
+}
+
+.list-menu.-horizontal .list {
+    float: left;
+}

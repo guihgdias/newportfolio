@@ -1,0 +1,15 @@
+.main-header {
+    width: 100%;
+    background: var(--black);
+    z-index: 99;
+}
+
+.main-header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header .navigation {
+    display: flex;
+    align-items: center;
+}

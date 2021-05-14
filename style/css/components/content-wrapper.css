@@ -1,0 +1,18 @@
+.content-wrapper {
+    padding: 10px;
+}
+
+.content-wrapper.-flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-wrapper.-flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper.-centerCenter {
+    justify-content: center;
+    align-items: center;
+}

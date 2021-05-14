@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guilherme Henrique</title>
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+        <link href="style/css/reset.css" rel="stylesheet">
+        <link href="style/css/palette.css" rel="stylesheet">
+        <link href="style/css/general.css" rel="stylesheet">
+        <link href="style/css/components/main-header.css" rel="stylesheet">
+        <link href="style/css/components/fixed.header.css" rel="stylesheet">
+        <link href="style/css/components/main-container.css" rel="stylesheet">
+        <link href="style/css/components/content-wrapper.css" rel="stylesheet">
+        <link href="style/css/components/list-menu.css" rel="stylesheet">
+        <link href="style/css/components/main-logo.css" rel="stylesheet">
+        <link href="style/css/components/main-section.css" rel="stylesheet">
+        <link href="style/css/components/main-title.css" rel="stylesheet">
+        <link href="style/css/components/main-banner.css" rel="stylesheet">
+        <link href="style/css/components/main-description.css" rel="stylesheet">
+        <link href="style/css/components/grid-layout.css" rel="stylesheet">
+        <link href="style/css/components/knowledge-box.css" rel="stylesheet">
+        <link href="style/css/components/button-top.css" rel="stylesheet">
+        <link href="style/css/components/project-box.css" rel="stylesheet">
+        <link href="style/css/components/main-footer.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="main-container -large">
+                <div class="content-wrapper">
+                    <div class="main-logo"><a href="#" class="anchor" title="Guilherme Henrique">G</a></div>
+                    <nav class="navigation">
+                        <ul class="list-menu -horizontal">
+                            <li class="list"><a href="#" class="anchor" title="Conhecimentos">Conhecimentos</a></li>
+                            <li class="list"><a href="#" class="anchor" title="Projetos">Projetos</a></li>
+                            <li class="list"><a href="#" class="anchor" title="Contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main-section main-banner">
+                <div class="main-container -small">
+                    <div class="content-wrapper -flexColumn -centerCenter">
+                        <img src="assets/images/profile/profile.jpg" class="image" alt="Foto de Guilherme Henrique">
+                        <h1 class="main-title -big -mainColor">Guilherme Henrique</h1>
+                        <p class="main-description">Freelancer <span class="otColor">━</span> desenvolvedor web <span class="otColor">Front-end</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="main-container -small">
+                    <div class="content-wrapper">
+                        <h2 class="main-title -medium -line">Conhecimentos</h2>
+                        <div class="grid-layout">
+                            <div class="knowledge-box">
+                                <div class="main-title -small">HTML</div>
+                                <img src="assets/images/knowledge/html.png" alt="HTML Image" title="HTML" class="image">
+                            </div>
+                            <div class="knowledge-box">
+                                <div class="main-title -small">CSS</div>
+                                <img src="assets/images/knowledge/css.png" alt="CSS Image" title="HTML" class="image">
+                            </div>
+                            <div class="knowledge-box">
+                                <div class="main-title -small">JS</div>
+                                <img src="assets/images/knowledge/js.png" alt="JS Image" title="HTML" class="image">
+                            </div>
+                            <div class="knowledge-box">
+                                <div class="main-title -small">GIT</div>
+                                <img src="assets/images/knowledge/git.png" alt="GIT Image" title="HTML" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="main-container -small">
+                    <div class="content-wrapper">
+                        <h2 class="main-title -medium -line">Projetos</h2>
+                        <div class="grid-layout">
+                            <div class="project-box">..</div>
+                            <div class="project-box">.</div>
+                            <div class="project-box">.</div>
+                            <div class="project-box">.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="main-container -small">
+                    <div class="content-wrapper">
+                        <h2 class="main-title -medium -line">Contato</h2>
+                        <form class="flex-column" action="#" method="POST">
+                            <label for="contact-name">Nome completo</label>
+                            <input type="text" id="contact-name" name="nome" placeholder="Seu nome completo" required ></input>
+
+                            <label for="contact-email">E-mail</label>
+                            <input type="email" id="contact-email" name="e-mail" placeholder="seuemail@exemplo.com" required ></input>
+
+                            <label for="contact-topic">Assunto</label>
+                            <select id="contact-topic" name="topic">
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="valores">Valores</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="services">Serviços</option>
+                              </select>
+
+                            <label for="contact-message">Mensagem</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Mensagem..." required></textarea>
+
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="button-top">
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="content-wrapper">
+                <a href="https://facebook.com/guihgdias/" class="anchor -facebook" target="_blank" title="Facebook"></a>
+                <a href="https://instagram.com/guihgdias/" class="anchor -instagram" target="_blank" title="Instagram"></a>
+                <a href="https://twitter.com/guihgdias/" class="anchor -twitter" target="_blank" title="Twitter"></a>
+                <a href="https://github.com/guihgdias" class="anchor -github" target="_blank" title="Github"></a>
+                <a href="https://www.linkedin.com/in/guilherme-henrique-b851021a3/" class="anchor -linkedin" target="_blank" title="Linkedin"></a>
+            </div>
+        </footer>
+        <script src="script/js/general.js"></script>
+        <script src="script/js/components/to-menu.js"></script>
+        <script src="script/js/components/to-top.js"></script>
+    </body>
+</html>

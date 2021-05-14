@@ -1,0 +1,8 @@
+.main-description {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.main-description .otColor {
+    color: var(--main-color);
+}
