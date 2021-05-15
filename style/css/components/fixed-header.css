@@ -17,3 +17,8 @@
     display: flex;
     align-items: center;
 }
+
+.fixed-header .navigation .anchor {
+    cursor: pointer;
+    user-select: none;
+}

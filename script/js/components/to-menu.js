@@ -1,7 +1,8 @@
 const menuList = document.querySelectorAll('.main-header .list-menu .list');
-const knowledges = menuList[0];
-const projects = menuList[1];
-const contact = menuList[2];
+const home = menuList[0];
+const knowledges = menuList[1];
+const projects = menuList[2];
+const contact = menuList[3];
 
 knowledges.addEventListener('click', () => {
     window.scrollTo({
@@ -21,7 +22,7 @@ projects.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
     window.scrollTo({
-        top: 760,
+        top: 2670,
         left: 0,
         behavior: 'smooth'
     });

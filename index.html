@@ -5,13 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Guilherme Henrique</title>
+        <link rel="icon" href="assets/icons/g.png">
         <link href="https://fonts.gstatic.com" rel="preconnect">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
         <link href="style/css/reset.css" rel="stylesheet">
         <link href="style/css/palette.css" rel="stylesheet">
         <link href="style/css/general.css" rel="stylesheet">
         <link href="style/css/components/main-header.css" rel="stylesheet">
-        <link href="style/css/components/fixed.header.css" rel="stylesheet">
+        <link href="style/css/components/fixed-header.css" rel="stylesheet">
         <link href="style/css/components/main-container.css" rel="stylesheet">
         <link href="style/css/components/content-wrapper.css" rel="stylesheet">
         <link href="style/css/components/list-menu.css" rel="stylesheet">
@@ -25,17 +26,35 @@
         <link href="style/css/components/button-top.css" rel="stylesheet">
         <link href="style/css/components/project-box.css" rel="stylesheet">
         <link href="style/css/components/main-footer.css" rel="stylesheet">
+        <link href="style/css/components/contact-form.css" rel="stylesheet">
+        <link href="style/css/components/button-whatsapp.css" rel="stylesheet">
     </head>
     <body>
+        <header class="fixed-header">
+            <div class="main-container -large">
+                <div class="content-wrapper">
+                    <div class="main-logo"><a href="#" class="anchor" title="Guilherme Henrique">G</a></div>
+                    <nav class="navigation">
+                        <ul class="list-menu -horizontal">
+                            <li class="list"><a class="anchor" title="Início">Início</a></li>
+                            <li class="list"><a class="anchor" title="Conhecimentos">Conhecimentos</a></li>
+                            <li class="list"><a class="anchor" title="Projetos">Projetos</a></li>
+                            <li class="list"><a class="anchor" title="Contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
         <header class="main-header">
             <div class="main-container -large">
                 <div class="content-wrapper">
                     <div class="main-logo"><a href="#" class="anchor" title="Guilherme Henrique">G</a></div>
                     <nav class="navigation">
                         <ul class="list-menu -horizontal">
-                            <li class="list"><a href="#" class="anchor" title="Conhecimentos">Conhecimentos</a></li>
-                            <li class="list"><a href="#" class="anchor" title="Projetos">Projetos</a></li>
-                            <li class="list"><a href="#" class="anchor" title="Contato">Contato</a></li>
+                            <li class="list"><a class="anchor" title="Início">Início</a></li>
+                            <li class="list"><a class="anchor" title="Conhecimentos">Conhecimentos</a></li>
+                            <li class="list"><a class="anchor" title="Projetos">Projetos</a></li>
+                            <li class="list"><a class="anchor" title="Contato">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,7 +64,7 @@
             <section class="main-section main-banner">
                 <div class="main-container -small">
                     <div class="content-wrapper -flexColumn -centerCenter">
-                        <img src="assets/images/profile/profile.jpg" class="image" alt="Foto de Guilherme Henrique">
+                        <img src="assets/images/profile/raul.jpg" class="image" alt="Foto de Guilherme Henrique">
                         <h1 class="main-title -big -mainColor">Guilherme Henrique</h1>
                         <p class="main-description">Freelancer <span class="otColor">━</span> desenvolvedor web <span class="otColor">Front-end</span></p>
                     </div>
@@ -81,7 +100,9 @@
                     <div class="content-wrapper">
                         <h2 class="main-title -medium -line">Projetos</h2>
                         <div class="grid-layout">
-                            <div class="project-box">..</div>
+                            <div class="project-box">.</div>
+                            <div class="project-box">.</div>
+                            <div class="project-box">.</div>
                             <div class="project-box">.</div>
                             <div class="project-box">.</div>
                             <div class="project-box">.</div>
@@ -93,32 +114,27 @@
                 <div class="main-container -small">
                     <div class="content-wrapper">
                         <h2 class="main-title -medium -line">Contato</h2>
-                        <form class="flex-column" action="#" method="POST">
-                            <label for="contact-name">Nome completo</label>
-                            <input type="text" id="contact-name" name="nome" placeholder="Seu nome completo" required ></input>
-
-                            <label for="contact-email">E-mail</label>
-                            <input type="email" id="contact-email" name="e-mail" placeholder="seuemail@exemplo.com" required ></input>
-
-                            <label for="contact-topic">Assunto</label>
-                            <select id="contact-topic" name="topic">
+                        <form class="contact-form" action="#" method="POST">
+                            <label for="name" class="textLabel">Nome completo</label>
+                            <input type="text" id="name" name="nome" placeholder="Seu nome completo" class="input" required ></input>
+                            <label for="email" class="textLabel">E-mail</label>
+                            <input type="email" id="email" name="e-mail" placeholder="seuemail@exemplo.com" class="input" required ></input>
+                            <label for="topic" class="textLabel">Assunto</label>
+                            <select id="topic" name="topic" class="input">
                                 <option value="duvida">Dúvida</option>
                                 <option value="sugestao">Sugestão</option>
                                 <option value="valores">Valores</option>
                                 <option value="feedback">Feedback</option>
-                                <option value="services">Serviços</option>
+                                <option value="services">Contratar Serviços</option>
                               </select>
-
-                            <label for="contact-message">Mensagem</label>
-                            <textarea id="contact-message" name="message" rows="5" placeholder="Mensagem..." required></textarea>
-
-                            <button>Enviar</button>
+                            <label for="message" class="textLabel">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Mensagem..." class="input -textArea" required></textarea>
+                            <button class="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
             </section>
-            <div class="button-top">
-            </div>
+            <a class="button-whatsapp" href="https://api.whatsapp.com/send?phone=5562986292640" target="_blank"></a>
         </main>
         <footer class="main-footer">
             <div class="content-wrapper">
@@ -132,5 +148,6 @@
         <script src="script/js/general.js"></script>
         <script src="script/js/components/to-menu.js"></script>
         <script src="script/js/components/to-top.js"></script>
+        <script src="script/js/components/fixed-header.js"></script>
     </body>
 </html>
