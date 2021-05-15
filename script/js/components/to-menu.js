@@ -1,4 +1,4 @@
-const menuList = document.querySelectorAll('.main-header .list-menu .list');
+const menuList = document.querySelectorAll('.main-header .list-menu .list .anchor');
 const home = menuList[0];
 const knowledges = menuList[1];
 const projects = menuList[2];

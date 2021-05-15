@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const menuListFixed = document.querySelectorAll('.fixed-header .list-menu .list');
+const menuListFixed = document.querySelectorAll('.fixed-header .list-menu .list .anchor');
 const homeFixed = menuListFixed[0];
 const knowledgesFixed = menuListFixed[1];
 const projectsFixed = menuListFixed[2];
