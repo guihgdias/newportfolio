@@ -1,3 +1,47 @@
 .project-box {
-    background: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 200ms linear;
+}
+
+.project-box:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.project-box.-devsfriends {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../../assets/images/projects/devsfriends.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border: 2px solid var(--black);
+}
+
+.project-box.-devsfriends:hover,
+.project-box.-linkskills:hover {
+    background-size: 55%;
+}
+
+.project-box.-esobrasil {
+    background-color: rgb(17, 17, 17);
+    background-image: url('../../../assets/images/projects/esobrasil.png');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: 2px solid var(--black);
+}
+
+.project-box.-esobrasil:hover {
+    background-size: 95%;
+}
+
+.project-box.-linkskills {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../../assets/images/projects/linkskills.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border: 2px solid var(--black);
 }
