@@ -14,7 +14,7 @@ knowledges.addEventListener('click', () => {
 
 projects.addEventListener('click', () => {
     window.scrollTo({
-        top: 1720,
+        top: 1630,
         left: 0,
         behavior: 'smooth'
     });
@@ -22,7 +22,7 @@ projects.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
     window.scrollTo({
-        top: 2670,
+        top: 2260,
         left: 0,
         behavior: 'smooth'
     });

@@ -34,7 +34,7 @@ knowledgesFixed.addEventListener('click', () => {
 
 projectsFixed.addEventListener('click', () => {
     window.scrollTo({
-        top: 1720,
+        top: 1630,
         left: 0,
         behavior: 'smooth'
     });
@@ -42,7 +42,7 @@ projectsFixed.addEventListener('click', () => {
 
 contactFixed.addEventListener('click', () => {
     window.scrollTo({
-        top: 2670,
+        top: 2260,
         left: 0,
         behavior: 'smooth'
     });
