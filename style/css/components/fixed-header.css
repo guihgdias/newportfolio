@@ -22,3 +22,13 @@
     cursor: pointer;
     user-select: none;
 }
+
+@media (max-width: 800px) {
+    .fixed-header {
+        display: none;
+    }
+
+    .main-header {
+        display: none;
+    }
+}
