@@ -1,7 +1,7 @@
 const fixedHeader = document.querySelector('.fixed-header');
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 300) {
         fixedHeader.style = 'z-index: 999; opacity: 1';
     } else {
         fixedHeader.style = 'z-index: -1; opacity 0';
@@ -14,8 +14,6 @@ const knowledgesFixed = menuListFixed[1];
 const projectsFixed = menuListFixed[2];
 const contactFixed = menuListFixed[3];
 
-console.log(menuListFixed)
-
 homeFixed.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
@@ -26,7 +24,7 @@ homeFixed.addEventListener('click', () => {
 
 knowledgesFixed.addEventListener('click', () => {
     window.scrollTo({
-        top: 760,
+        top: 659,
         left: 0,
         behavior: 'smooth'
     });
@@ -34,7 +32,7 @@ knowledgesFixed.addEventListener('click', () => {
 
 projectsFixed.addEventListener('click', () => {
     window.scrollTo({
-        top: 1630,
+        top: 1623,
         left: 0,
         behavior: 'smooth'
     });
@@ -42,7 +40,7 @@ projectsFixed.addEventListener('click', () => {
 
 contactFixed.addEventListener('click', () => {
     window.scrollTo({
-        top: 2260,
+        top: 2266,
         left: 0,
         behavior: 'smooth'
     });

@@ -18,3 +18,9 @@
     cursor: pointer;
     user-select: none;
 }
+
+@media (max-width: 850px) {
+    .main-header .navigation .list-menu .list:not(:last-child) {
+        display: none;
+    }
+}

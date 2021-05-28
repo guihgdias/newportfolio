@@ -6,7 +6,7 @@ const contact = menuList[3];
 
 knowledges.addEventListener('click', () => {
     window.scrollTo({
-        top: 760,
+        top: 659,
         left: 0,
         behavior: 'smooth'
     });
@@ -14,7 +14,7 @@ knowledges.addEventListener('click', () => {
 
 projects.addEventListener('click', () => {
     window.scrollTo({
-        top: 1630,
+        top: 1623,
         left: 0,
         behavior: 'smooth'
     });
@@ -22,7 +22,7 @@ projects.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
     window.scrollTo({
-        top: 2260,
+        top: 2266,
         left: 0,
         behavior: 'smooth'
     });

@@ -23,12 +23,8 @@
     user-select: none;
 }
 
-@media (max-width: 800px) {
-    .fixed-header {
-        display: none;
-    }
-
-    .main-header {
+@media (max-width: 850px) {
+    .fixed-header .navigation .list-menu .list:not(:last-child) {
         display: none;
     }
 }

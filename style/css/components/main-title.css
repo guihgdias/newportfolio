@@ -1,6 +1,6 @@
 .main-title {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--white);
     text-align: center;
 }
@@ -23,9 +23,9 @@
 
 .main-title.-line::after {
     content: '';
-    width: 50px;
-    height: 5px;
-    margin: 0px auto;
+    width: 80px;
+    height: 3px;
+    margin: 10px auto 0px auto;
     display: block;
     background: var(--main-color);
 }

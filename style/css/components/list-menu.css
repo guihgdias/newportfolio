@@ -13,7 +13,7 @@
     color: var(--main-color);
 }
 
-.list-menu .list .anchor::after:not(.anchor.-btn) {
+.list-menu .list .anchor::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -54,4 +54,8 @@
 
 .list-menu .list .anchor.-btn:hover {
     opacity: 1;
+}
+
+.list-menu .list .anchor.-btn::after {
+    content: none;
 }
