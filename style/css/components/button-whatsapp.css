@@ -1,29 +1,36 @@
 .button-whatsapp {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     background: url('../../../assets/icons/whatsapp.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
     text-align: center;
-    transform: rotate(190deg) scale(1.0);
+    transform: scale(1.0);
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    right: 50px;
     cursor: pointer;
-    filter: saturate(0%);
+    animation: pulseButtonTop 2000ms infinite;
     z-index: 9999;
 }
 
 .button-whatsapp:hover {
-    animation: pulseButtonTop 500ms infinite;
-    transform: rotate(190deg) scale(1.0);
+    transform: scale(1.0);
     filter: saturate(100%);
 }
 
 @keyframes pulseButtonTop {
-    0% {transform: rotate(190deg) scale(1.0)}
-    50% {transform: rotate(190deg) scale(1.01)}
-    100% {transform: rotate(190deg) scale(1.0)}
+    0% {transform: scale(1.0)}
+    10% {transform: scale(1.0)}
+    20% {transform: scale(1.0)}
+    30% {transform: scale(1.0)}
+    40% {transform: scale(1.0)}
+    50% {transform: scale(1.0)}
+    60% {transform: scale(1.05)}
+    70% {transform: scale(1.0)}
+    80% {transform: scale(1.05)}
+    90% {transform: scale(1.0)}
+    100% {transform: scale(1.0)}
 }
