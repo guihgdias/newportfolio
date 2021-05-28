@@ -4,7 +4,6 @@
 
 .list-menu .list .anchor {
     font-size: 1.3rem;
-    font-weight: 600;
     color: var(--white);
     text-transform: uppercase;
     transition: all 200ms linear;
@@ -14,7 +13,7 @@
     color: var(--main-color);
 }
 
-.list-menu .list .anchor::after {
+.list-menu .list .anchor::after:not(.anchor.-btn) {
     content: '';
     width: 0%;
     height: 2px;
@@ -39,4 +38,20 @@
 
 .list-menu.-horizontal .list {
     float: left;
+}
+
+.list-menu .list .anchor.-btn {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.list-menu .list .anchor.-btn {
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.6;
+}
+
+.list-menu .list .anchor.-btn:hover {
+    opacity: 1;
 }
