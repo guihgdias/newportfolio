@@ -6,6 +6,7 @@
     display: block;
     opacity: 0;
     transition: 350ms all linear;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .fixed-header .content-wrapper {

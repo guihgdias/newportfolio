@@ -1,18 +1,22 @@
 .knowledge-box {
     border-radius: 20px;
     padding: 20px;
-    display: flex;
+    display: table;
     flex-direction: column;
     align-content: center;
 }
 
 .knowledge-box .image {
     object-fit: contain;
-    height: 80%;
+    width: 100%;
 }
 
 .knowledge-box .main-title {
     margin-bottom: 15px;
-    color: var(--main-color);
     letter-spacing: 5px;
+}
+
+.knowledge-box figcaption {
+    display: table-caption;
+    caption-side: top;
 }
