@@ -9,6 +9,10 @@
     transition: all 200ms linear;
 }
 
+.list-menu .list .anchor.-active {
+    color: var(--main-color);
+}
+
 .list-menu .list .anchor:hover {
     color: var(--main-color);
 }
