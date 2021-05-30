@@ -1,29 +1,23 @@
 const menuList = document.querySelectorAll('.main-header .list-menu .list .anchor');
-const home = menuList[0];
-const knowledges = menuList[1];
-const projects = menuList[2];
-const contact = menuList[3];
+const sections = document.querySelectorAll('.main-section');
 
-knowledges.addEventListener('click', () => {
+menuList[1].addEventListener('click', () => {
     window.scrollTo({
-        top: 659,
-        left: 0,
+        top: sections[1].offsetTop,
         behavior: 'smooth'
     });
 })
 
-projects.addEventListener('click', () => {
+menuList[2].addEventListener('click', () => {
     window.scrollTo({
-        top: 1623,
-        left: 0,
+        top: sections[2].offsetTop,
         behavior: 'smooth'
     });
 })
 
-contact.addEventListener('click', () => {
+menuList[3].addEventListener('click', () => {
     window.scrollTo({
-        top: 2266,
-        left: 0,
+        top: sections[3].offsetTop,
         behavior: 'smooth'
     });
 })
