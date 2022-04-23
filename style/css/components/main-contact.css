@@ -1,0 +1,16 @@
+.main-contact span.main-description {
+  margin-left: 30px;
+}
+
+.main-contact .content-wrapper {
+  margin-top: 50px;
+}
+
+.main-contact .main-title:not(h2) {
+  text-align: left;
+  width: 300px;
+}
+
+.main-contact h2.main-title {
+  margin-bottom: 20px;
+}

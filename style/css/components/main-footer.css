@@ -17,9 +17,8 @@
     display: block;
     height: 40px;
     width: 40px;
-    border-radius: 50%;
     text-align: center;
-    background-size: 110%;
+    background-size: 85%;
     background-repeat: no-repeat;
     background-position: center;
     filter: saturate(0%);
@@ -35,11 +34,11 @@
 }
 
 .main-footer .anchor.-facebook {
-    background-image: url('../../../assets/icons/socials/facebook.png');
+    background-image: url('../../../assets/icons/socials/facebook-alt.png');
 }
 
 .main-footer .anchor.-instagram {
-    background-image: url('../../../assets/icons/socials/instagram.png');
+    background-image: url('../../../assets/icons/socials/instagram-alt.png');
 }
 
 .main-footer .anchor.-twitter {
@@ -47,9 +46,9 @@
 }
 
 .main-footer .anchor.-github {
-    background-image: url('../../../assets/icons/socials/github.png');
+    background-image: url('../../../assets/icons/socials/github-alt.png');
 }
 
 .main-footer .anchor.-linkedin {
-    background-image: url('../../../assets/icons/socials/linkedin.png');
+    background-image: url('../../../assets/icons/socials/linkedin-alt.png');
 }
